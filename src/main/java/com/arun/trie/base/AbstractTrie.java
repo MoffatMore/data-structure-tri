@@ -35,7 +35,7 @@ public interface AbstractTrie<V> {
 
     boolean contains(String key);
 
-    V get(String key);
+    String get(String key);
 
     List<String> getKeySuggestions(String prefix);
 

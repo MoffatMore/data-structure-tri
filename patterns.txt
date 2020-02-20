@@ -1,21 +1,47 @@
-yo o leleng
-yo o sa leleng
-yo o tla lelang
-yo o santseng a lela
-yo o neng a lela
-yo o neng a santse a lela
-yo o neng a tla lela
-yo o tlholang a lela
-yo o letseng a lela
-yo o neng a tlhola a lela
-yo modimo a mo segofaditseng
-yo re mo ratang
-yo re sa mo rateng
-yo bana ba gagwe ba tsamaileng
-yo rona re mo tlhophileng
-se a se ratang
-se bone ba se bonang
-se a tla se bonang
-se a neng a tla se bona
-se a sa tleng go se bona
-se a sa se rateng
+cc cc verb+ng
+cc cc sa verb+ng
+cc cc tla verb+ng
+cc cc sa ka keng cc verb
+cc cc neng cc le adj
+cc cc adv
+cc cc neng cc mo verb
+cc cc seng cc noun
+cc cc mo noun+ng
+cc cc sa mo verb+ng
+cc cc santseng cc verb
+cc cc setseng cc verb
+cc cc neng cc verb
+cc cc neng cc santse cc verb
+cc cc neng cc tla verb
+cc cc tlholang cc verb
+cc cc sa tlholeng cc verb
+cc cc se kitlang cc verb
+cc cc neng cc sa verb
+cc cc neng cc sa mo verb
+cc cc neng cc se adj
+cc cc letseng cc verb
+cc cc neng cc tlhola cc verb
+cc cc neng cc verb cc le mo verb+ng
+cc modimo a cc verb+ng
+cc re cc verb+ng
+cc re sa cc verb+ng
+yo noun cc gagwe cc verb+ng
+ba noun cc bone cc verb+ng
+cc rona re cc verb+ng
+cc ba cc verb+ng
+cc cc nang le noun
+cc cc senang noun
+cc cc neng cc le mo verb+ng
+cc cc neng cc mo verb
+cc a cc verb+ng
+cc cc adverb
+cc cc iseng cc verb
+cc ke cc verb+ng
+cc e leng verb
+e noun a e verb+ng
+cc a cc verb+ng
+cc bone ba cc verb+ng
+cc a tla cc verb+ng
+se a neng a tla se verb
+se a sa tleng go se verb
+se a sa se verb+ng

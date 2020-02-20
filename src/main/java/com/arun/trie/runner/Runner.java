@@ -36,9 +36,9 @@ class Runner {
         for (String word : words) {
             mapTrie.insert(word, word);
         }
-//        System.out.println(mapTrie.getKeySuggestions("yo"));
-        //mapTrie.print();
-        System.out.println(mapTrie.getValueSuggestions("yo o neng"));
+        System.out.println(mapTrie.getValueSuggestions("se a neng a tla se bona"));
+        mapTrie.print();
+        System.out.println(mapTrie.getKeySuggestions("yo ba"));
     }
 
     private static List<String> getWords() {

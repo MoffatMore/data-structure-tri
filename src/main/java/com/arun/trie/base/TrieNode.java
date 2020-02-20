@@ -22,9 +22,9 @@ import java.util.Collection;
 
 public interface TrieNode<V> {
 
-    V getValue();
+    String getValue();
 
-    void setValue(V value);
+    void setValue(String value);
 
     String getString();
 

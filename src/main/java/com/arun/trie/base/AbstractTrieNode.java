@@ -25,11 +25,11 @@ public abstract class AbstractTrieNode<V> implements TrieNode<V> {
 
     private final String word;
     private boolean key;
-    private V value;
+    private String value;
 
     protected AbstractTrieNode(String word) {
         key = false;
-        value = null;
+        value = "";
         this.word = word;
     }
 
@@ -39,13 +39,13 @@ public abstract class AbstractTrieNode<V> implements TrieNode<V> {
     }
 
     @Override
-    public V getValue() {
+    public String getValue() {
         return value;
     }
 
 
     @Override
-    public void setValue(V value) {
+    public void setValue(String value) {
         this.value = value;
     }
 
@@ -107,11 +107,12 @@ public abstract class AbstractTrieNode<V> implements TrieNode<V> {
 
     private void print(final String prefix, final boolean isTail) {
         final String data = value != null ? value.toString() : "";
-        final String suffix = isTail ? "    " : "│   ";
+        final String suffix = isTail ? "    " : "│  ";
 
         System.out.println(prefix
                 + (isTail ? "└── " : "├── ")
-                + word + (key ? "\'" + data : ""));
+                + word );
+        //+ (key ? "\'" + data : "")
 
         final LinkedList<TrieNode<V>> nodes = new LinkedList<>(getChildren());
 

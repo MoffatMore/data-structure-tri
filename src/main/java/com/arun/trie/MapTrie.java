@@ -25,7 +25,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 
-public class MapTrie<V> implements AbstractTrie<V> {
+public class MapTrie<V> implements AbstractTrie<String> {
 
     protected TrieNode<V> root;
 
@@ -47,7 +47,7 @@ public class MapTrie<V> implements AbstractTrie<V> {
     }
 
     @Override
-    public void insert(String key, V value) {
+    public void insert(String key, String value) {
         if (key == null) {
             return;
         }
@@ -62,8 +62,9 @@ public class MapTrie<V> implements AbstractTrie<V> {
                 crawler = crawler.getChild(word);
             }
         }
-        crawler.setKey(true);
         crawler.setValue(value);
+        crawler.setKey(true);
+
     }
 
     @Override
@@ -91,7 +92,7 @@ public class MapTrie<V> implements AbstractTrie<V> {
     }
 
     @Override
-    public V get(String key) {
+    public String get(String key) {
         if (key == null) {
             return null;
         }
@@ -109,18 +110,19 @@ public class MapTrie<V> implements AbstractTrie<V> {
     }
 
     @Override
-    public List<String> getKeySuggestions(String key) {
-        if (key == null) {
+    public List<String> getKeySuggestions(String keys) {
+        if (keys == null) {
             return Collections.emptyList();
         }
-        key = trimLowercaseString(key);
+        keys = trimLowercaseString(keys);
+        TrieNode<V> crawler = root;
 
         final StringBuilder prefix = new StringBuilder();
-
-        TrieNode<V> crawler = root;
-        if (crawler.containsChild(key)) {
-            prefix.append(key);
-            crawler = crawler.getChild(key);
+        for (String key: keys.split(" ")) {
+            if (crawler.containsChild(key)) {
+                prefix.append(key);
+                crawler = crawler.getChild(key);
+            }
         }
 
         final List<String> strings = new LinkedList<>();
@@ -134,24 +136,28 @@ public class MapTrie<V> implements AbstractTrie<V> {
     }
 
     @Override
-    public List<V> getValueSuggestions(String prefix) {
+    public List<String> getValueSuggestions(String prefix) {
         if (prefix == null) {
             return Collections.emptyList();
         }
         prefix = trimLowercaseString(prefix);
-
         TrieNode<V> crawler = root;
-        if (crawler.containsChild(prefix)) {
-            crawler = crawler.getChild(prefix);
-        }
 
-        final List<V> suggestions = new LinkedList<>();
+        for (String key: prefix.split(" ")) {
+            if (crawler.containsChild(key)) {
+                crawler = crawler.getChild(key);
+            }
+        }
+        if (!crawler.isKey())
+            crawler = null;
+
+        final List<String> suggestions = new LinkedList<>();
         findValueSuggestions(crawler, suggestions);
         return suggestions;
     }
 
     @Override
-    public List<V> values() {
+    public List<String> values() {
         return getValueSuggestions(String.valueOf(ROOT_KEY));
     }
 
@@ -202,12 +208,12 @@ public class MapTrie<V> implements AbstractTrie<V> {
         }
     }
 
-    private void findValueSuggestions(final TrieNode<V> trieNode, final List<V> suggestions) {
+    private void findValueSuggestions(final TrieNode<V> trieNode, final List<String> suggestions) {
         if (trieNode == null) {
             return;
         }
         if (trieNode.isKey()) {
-            final V value = trieNode.getValue();
+            final String value = trieNode.getValue();
             if (value != null) {
                 suggestions.add(value);
             } else {
