@@ -136,20 +136,31 @@ public class MapTrie<V> implements AbstractTrie<String> {
     }
 
     @Override
-    public List<String> getValueSuggestions(String prefix) {
-        if (prefix == null) {
+    public List<String> getValueSuggestions(String tag) {
+        if (tag == null) {
             return Collections.emptyList();
         }
-        prefix = trimLowercaseString(prefix);
+        tag = trimLowercaseString(tag);
         TrieNode<V> crawler = root;
+        String word = "";
 
-        for (String key: prefix.split(" ")) {
-            if (crawler.containsChild(key)) {
+        for (String key: tag.split(" ")) {
+            if (key.contains(":")){
+                String[] temp = key.split(":");
+                word+= temp[0]+" ";
+                if (crawler.containsChild(temp[1])) {
+                    crawler = crawler.getChild(temp[1]);
+                }
+            }else if (crawler.containsChild(key)) {
                 crawler = crawler.getChild(key);
+                word+=key+" ";
             }
         }
+
         if (!crawler.isKey())
             crawler = null;
+        else
+            crawler.setValue(word.trim());
 
         final List<String> suggestions = new LinkedList<>();
         findValueSuggestions(crawler, suggestions);
@@ -216,6 +227,7 @@ public class MapTrie<V> implements AbstractTrie<String> {
             final String value = trieNode.getValue();
             if (value != null) {
                 suggestions.add(value);
+                return;
             } else {
                 System.out.println("Null value for a key encountered");
             }

@@ -36,4 +36,5 @@ public class HashMapNode<V> extends AbstractMapNode<V> {
     protected AbstractMapNode<V> onCreateNewNode(String word) {
         return new HashMapNode<>(word);
     }
+
 }

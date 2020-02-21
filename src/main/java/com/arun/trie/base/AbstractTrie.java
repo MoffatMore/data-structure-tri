@@ -41,7 +41,7 @@ public interface AbstractTrie<V> {
 
     List<String> keys();
 
-    List<V> getValueSuggestions(String prefix);
+    List<V> getValueSuggestions(String tag);
 
     List<V> values();
 

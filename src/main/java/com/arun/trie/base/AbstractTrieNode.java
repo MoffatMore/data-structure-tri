@@ -18,9 +18,6 @@ package com.arun.trie.base;
 
 import java.util.LinkedList;
 
-/**
- * Created by Arunkumar on 24/11/16.
- */
 public abstract class AbstractTrieNode<V> implements TrieNode<V> {
 
     private final String word;
