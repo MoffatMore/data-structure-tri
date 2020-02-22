@@ -1,0 +1,50 @@
+*******************TRIE DATA STRUCTURE RESULTS************************
+
+Sentence										                                    |Pattern Found
+
+yo:cc o:cc leleng:verb+ng						                                    |true
+yo:cc o:cc sa leleng:verb+ng						                                |true
+yo:cc o:cc tla lelang:verb+ng						                                |true
+yo:cc o:cc santseng a:cc lela:verb						                            |true
+yo:cc o:cc neng a:cc lela:verb						                                |true
+yo:cc o:cc neng a:cc santse a:cc lela:verb						                    |true
+yo:cc o:cc neng a:cc tla lela:verb						                            |true
+yo:cc o:cc tlholang a:cc lela:verb						                            |true
+yo:cc o:cc letseng a:cc lela:verb						                            |true
+yo:cc o:cc neng a:cc tlhola a:cc lela:verb						                    |true
+yo:cc modimo a mo segofaditseng:verb+ng						                        |false
+yo:cc re mo ratang:verb+ng						                                    |false
+yo:cc re sa mo rateng:verb+ng						                                |false
+yo:cc bana ba gagwe ba tsamaileng:verb+ng						                    |false
+yo:cc rona re mo tlhophileng:verb+ng						                        |false
+se:cc a se ratang:verb+ng						                                    |false
+se:cc bone ba se bonang:verb+ng						                                |false
+se:cc a tla se bonang:verb+ng						                                |false
+se:cc a neng a tla se bona:verb						                                |false
+se:cc a sa tleng go se bona:verb						                            |false
+se:cc a sa se rateng:verb						                                    |false
+yo:cc o:cc neng a le montle:adj						                                |false
+yo:cc o:cc neng a tla bereka:verb						                            |false
+yo:cc o:cc setseng a bereka:verb						                            |false
+yo:cc o:cc neng a mo ruta:verb						                                |false
+yo:cc o:cc seng wa kgaolo:noun						                                |false
+yo:cc o:cc mo letsatsing:noun+ng						                            |true
+yo:cc o:cc sa mo rateng:verb+ng						                                |true
+yo:cc o:cc sa tlholeng a:cc bereka:verb						                        |true
+ba:cc ba:cc sa batleng:verb+ng go bereka:verb						                |true
+yo:cc o:cc se kitlang a:cc bereka:verb						                        |true
+yo:cc o:cc neng a:cc sa bereke:verb						                            |true
+yo:cc o:cc neng a:cc sa mo bereke:verb						                        |true
+yo:cc o:cc neng a:cc se moleele:adj						                            |true
+tse:cc di:cc mo ratang:verb+ng						                                |false
+ba:cc ba:cc nang le ntlo:noun						                                |true
+ba:cc ba:cc senang ntlo:noun						                                |true
+yo:cc o:cc neng a:cc le mo ntlong:noun+ng						                    |false
+yo:cc o:cc neng a:cc mo ruta:verb						                            |true
+ba:cc a ba:cc ratang:verb+ng						                                |true
+e:cc e:cc botlhokwa:adverb						                                    |true
+yo:cc a:cc iseng a:cc bereke:verb						                            |true
+yo:cc ke mo:cc ratang:verb+ng						                                |true
+yo:cc e leng kgosi:noun						                                        |false
+e podi:noun a e jeleng:verb						                                    |false
+ba:cc ba:cc neng ba:cc tlhola:verb ba:cc le mo lapeng:verb+ng						|true

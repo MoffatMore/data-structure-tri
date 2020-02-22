@@ -1,45 +1,46 @@
-yo o leleng
-yo o sa leleng
-yo o tla lelang
-yo o santseng a lela
-yo o neng a lela
-yo o neng a santse a lela
-yo o neng a tla lela
-yo o tlholang a lela
-yo o letseng a lela
-yo o neng a tlhola a lela
-yo modimo a mo segofaditseng
-yo re mo ratang
-yo re sa mo rateng
-yo bana ba gagwe ba tsamaileng
-yo rona re mo tlhophileng
-se a se ratang
-se bone ba se bonang
-se a tla se bonang
-se a neng a tla se bona
-se a sa tleng go se bona
-se a sa se rateng
-yo o neng a le montle
-yo o neng a tla bereka
-yo o setseng a bereka
-yo o neng a mo ruta
-yo o seng wa kgaolo
-yo o mo letsatsing
-yo o sa mo rateng
-yo o sa tlholeng a bereka
-yo o se kitlang a bereka
-yo o neng a sa bereke
-yo o neng a sa mo bereke
-yo o neng a se moleele
-ba ba neng ba tlhola ba le mo lapeng
-tse di mo ratang
-ba ba nang le ntlo
-ba ba senang ntlo
-yo o neng a le mo ntlong
-yo o neng a mo ruta
-ba a ba ratang
-e e botlhokwa
-yo a iseng a bereke
-yo ke mo ratang
-yo e leng kgosi
-e podi a e jeleng
+yo:cc o:cc leleng:verb+ng
+yo:cc o:cc sa leleng:verb+ng
+yo:cc o:cc tla lelang:verb+ng
+yo:cc o:cc santseng a:cc lela:verb
+yo:cc o:cc neng a:cc lela:verb
+yo:cc o:cc neng a:cc santse a:cc lela:verb
+yo:cc o:cc neng a:cc tla lela:verb
+yo:cc o:cc tlholang a:cc lela:verb
+yo:cc o:cc letseng a:cc lela:verb
+yo:cc o:cc neng a:cc tlhola a:cc lela:verb
+yo:cc modimo a mo segofaditseng:verb+ng
+yo:cc re mo ratang:verb+ng
+yo:cc re sa mo rateng:verb+ng
+yo:cc bana ba gagwe ba tsamaileng:verb+ng
+yo:cc rona re mo tlhophileng:verb+ng
+se:cc a se ratang:verb+ng
+se:cc bone ba se bonang:verb+ng
+se:cc a tla se bonang:verb+ng
+se:cc a neng a tla se bona:verb
+se:cc a sa tleng go se bona:verb
+se:cc a sa se rateng:verb
+yo:cc o:cc neng a le montle:adj
+yo:cc o:cc neng a tla bereka:verb
+yo:cc o:cc setseng a bereka:verb
+yo:cc o:cc neng a mo ruta:verb
+yo:cc o:cc seng wa kgaolo:noun
+yo:cc o:cc mo letsatsing:noun+ng
+yo:cc o:cc sa mo rateng:verb+ng
+yo:cc o:cc sa tlholeng a:cc bereka:verb
+ba:cc ba:cc sa batleng:verb+ng go bereka:verb
+yo:cc o:cc se kitlang a:cc bereka:verb
+yo:cc o:cc neng a:cc sa bereke:verb
+yo:cc o:cc neng a:cc sa mo bereke:verb
+yo:cc o:cc neng a:cc se moleele:adj
+ba:cc ba:cc neng ba:cc tlhola:verb ba:cc le mo lapeng:verb+ng
+tse:cc di:cc mo:cc ratang:verb+ng
+ba:cc ba:cc nang le ntlo:noun
+ba:cc ba:cc senang ntlo:noun
+yo:cc o:cc neng a:cc le mo ntlong:noun+ng
+yo:cc o:cc neng a:cc mo ruta:verb
+ba:cc a ba:cc ratang:verb+ng
+e:cc e:cc botlhokwa:adverb
+yo:cc a:cc iseng a:cc bereke:verb
+yo:cc ke mo:cc ratang:verb+ng
+yo:cc e leng kgosi:noun
+e podi:noun a e jeleng:verb

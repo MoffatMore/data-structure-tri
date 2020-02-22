@@ -3,7 +3,7 @@ cc cc sa verb+ng
 cc cc tla verb+ng
 cc cc sa ka keng cc verb
 cc cc neng cc le adj
-cc cc adv
+cc cc adverb
 cc cc neng cc mo verb
 cc cc seng cc noun
 cc cc mo noun+ng
@@ -37,7 +37,7 @@ cc a cc verb+ng
 cc cc adverb
 cc cc iseng cc verb
 cc ke cc verb+ng
-cc e leng verb
+cc e leng noun
 e noun a e verb+ng
 cc a cc verb+ng
 cc bone ba cc verb+ng
@@ -45,3 +45,4 @@ cc a tla cc verb+ng
 se a neng a tla se verb
 cc a sa tleng go cc verb
 cc a sa cc verb+ng
+cc cc cc verb+ng
